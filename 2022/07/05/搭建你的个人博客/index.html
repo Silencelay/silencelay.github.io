@@ -4,24 +4,26 @@
   <meta charset="utf-8">
   
   
-  <title>搭建你的第一个博客 | Hexo</title>
+  <title>搭建你的个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="使用GitHub page + hexo快速搭建个人博客前言Github Page 是 Github 提供的一种免费的静态网页托管服务（所以想想免费的空间不用也挺浪费的哈哈哈），可以用来托管博客、项目官网等静态网页。 支持 Jekyll、Hugo、Hexo 编译静态资源，这次我们的主角就是 Hexo 了，具体的内容下面在文章内介绍。 环境准备安装Node.js和Git并注册GitHub 安装 No">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建你的第一个博客">
-<meta property="og:url" content="http://example.com/2022/07/04/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="搭建你的个人博客">
+<meta property="og:url" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="使用GitHub page + hexo快速搭建个人博客前言Github Page 是 Github 提供的一种免费的静态网页托管服务（所以想想免费的空间不用也挺浪费的哈哈哈），可以用来托管博客、项目官网等静态网页。 支持 Jekyll、Hugo、Hexo 编译静态资源，这次我们的主角就是 Hexo 了，具体的内容下面在文章内介绍。 环境准备安装Node.js和Git并注册GitHub 安装 No">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://oscimg.oschina.net/oscnet/defb69f9-e4a3-4a70-881c-897425ec5726.png">
-<meta property="og:image" content="https://segmentfault.com/img/remote/1460000017990241?w=747&h=623">
-<meta property="og:image" content="https://segmentfault.com/img/remote/1460000017990250">
-<meta property="og:image" content="https://oscimg.oschina.net/oscnet/8d9b82b4-16e4-4b1e-bbbe-ce8f66b6f4da.png">
-<meta property="article:published_time" content="2022-07-04T05:23:59.000Z">
-<meta property="article:modified_time" content="2022-07-05T03:30:39.386Z">
+<meta property="og:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20220705112740924.png">
+<meta property="og:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/defb69f9-e4a3-4a70-881c-897425ec5726.png">
+<meta property="og:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1460000017990241.jpeg">
+<meta property="og:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1460000017990250.jpeg">
+<meta property="og:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/8d9b82b4-16e4-4b1e-bbbe-ce8f66b6f4da.png">
+<meta property="article:published_time" content="2022-07-05T04:33:57.000Z">
+<meta property="article:modified_time" content="2022-07-05T04:49:18.844Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://oscimg.oschina.net/oscnet/defb69f9-e4a3-4a70-881c-897425ec5726.png">
+<meta name="twitter:image" content="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20220705112740924.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -78,10 +80,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-搭建你的第一个博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-搭建你的个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/07/04/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2022-07-04T05:23:59.000Z" itemprop="datePublished">2022-07-04</time>
+    <a href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2022-07-05T04:33:57.000Z" itemprop="datePublished">2022-07-05</time>
 </a>
     
   </div>
@@ -92,7 +94,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      搭建你的第一个博客
+      搭建你的个人博客
     </h1>
   
 
@@ -132,14 +134,15 @@
 <p>新建完成后，指定文件夹的目录如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml <span class="comment"># 网站的配置信息，您可以在此配置大部分的参数。 </span></span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds <span class="comment"># 模版文件夹</span></span><br><span class="line">├── <span class="built_in">source</span>  <span class="comment"># 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹</span></span><br><span class="line">|   ├── _drafts <span class="comment"># 草稿文件</span></span><br><span class="line">|   └── _posts <span class="comment"># 文章Markdowm文件 </span></span><br><span class="line">└── themes  <span class="comment"># 主题文件夹</span></span><br></pre></td></tr></table></figure>
 
-<p>![image-20220705112740924](C:\Users\Silence Liu\AppData\Roaming\Typora\typora-user-images\image-20220705112740924.png)</p>
+<p><img src="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20220705112740924.png" alt="image-20220705112740924"></p>
 <h3 id="生成静态网页"><a href="#生成静态网页" class="headerlink" title="生成静态网页"></a>生成静态网页</h3><p>命令：hexo g</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 59 ms</span><br><span class="line">INFO  0 files generated <span class="keyword">in</span> 17 ms</span><br></pre></td></tr></table></figure>
 
 <h3 id="网页本地预览"><a href="#网页本地预览" class="headerlink" title="网页本地预览"></a>网页本地预览</h3><p>命令：hexo s</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br><span class="line">INFO  See you again</span><br></pre></td></tr></table></figure>
 
-<p>浏览器访问上述链接：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 预览效果<img src="https://oscimg.oschina.net/oscnet/defb69f9-e4a3-4a70-881c-897425ec5726.png" alt="img"></p>
+<p>浏览器访问上述链接：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 预览效果</p>
+<p><img src="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/defb69f9-e4a3-4a70-881c-897425ec5726.png" alt="img"></p>
 <p>可以看到访问没问题，但是只是在本地预览，“Press Ctrl+C to stop.” 接着将这个博客部署到github。</p>
 <h3 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h3><p><strong>新建仓库</strong>，注意！注意！注意！</p>
 <p>一定要填写.github.io后缀 不然就创建成普通项目了</p>
@@ -148,9 +151,9 @@
 <blockquote>
 <p>仓库名称格式： 用户名.github.io</p>
 </blockquote>
-<p>这个仓库名称将作为你github博客的访问地址<img src="https://segmentfault.com/img/remote/1460000017990241?w=747&h=623" alt="image"></p>
+<p>这个仓库名称将作为你github博客的访问地址<img src="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1460000017990241.jpeg" alt="image"></p>
 <p><strong>打开项目根目录下的 _config.yml 配置文件配置参数</strong></p>
-<p><img src="https://segmentfault.com/img/remote/1460000017990250" alt="image"></p>
+<p><img src="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1460000017990250.jpeg" alt="image"></p>
 <p>repository仓库地址改为自己的</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">repository不要写成git clone的https的地址</span><br></pre></td></tr></table></figure>
 
@@ -158,7 +161,7 @@
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repository:</span> https:<span class="comment">//github.com/gongchenghuigch/gongchenghuigch.github.io.git</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
 
 <p>branch看自己的github仓库是master还是main，这里是main，就填写main</p>
-<p><img src="https://oscimg.oschina.net/oscnet/8d9b82b4-16e4-4b1e-bbbe-ce8f66b6f4da.png" alt="img"></p>
+<p><img src="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/8d9b82b4-16e4-4b1e-bbbe-ce8f66b6f4da.png" alt="img"></p>
 <p><strong>要安装一个部署插件 <a target="_blank" rel="noopener" href="https://link.segmentfault.com/?enc=OSsIKOj0z3U2JHdeloUTTg==.NGsL1IMfItefEYYPOieHp6YDMoVg0i27IRcbsn2B/Elt2bWY6pnEZaiSlirvZx+p">hexo-deployer-git</a></strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -182,31 +185,38 @@
 <p>启动浏览器并转到<code>https://username.github.io</code>你就可以看到自己的博客啦！</p>
 <p>部署前最好能先执行一下 hexo clean 命令，清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
 <p>另外，如果你的文章暂时不发布可以先保存在草稿里面。生成草稿的方法和文章差不多 hexo new draft “文章标题”，生成后会在 &#x2F;source&#x2F;_drafts 里看到你的草稿文章。当你想发布时只要执行 publish 命令即可发布到博客。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/04/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" data-id="cl57m65jz0001rcvt9n2wg2aa" data-title="搭建你的第一个博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="cl57ozq1t0001hwvt12t16ocl" data-title="搭建你的个人博客" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2022/07/05/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Hello World
+          hexo使用typora设置图片路径
         
       </div>
     </a>
   
+  
+    <a href="/2022/07/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
 </nav>
 
@@ -222,9 +232,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -243,11 +267,15 @@
       <ul>
         
           <li>
-            <a href="/2022/07/05/hello-world/">Hello World</a>
+            <a href="/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/">hexo使用typora设置图片路径</a>
           </li>
         
           <li>
-            <a href="/2022/07/04/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">搭建你的第一个博客</a>
+            <a href="/2022/07/05/%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">搭建你的个人博客</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/05/hello-world/">Hello World</a>
           </li>
         
       </ul>
