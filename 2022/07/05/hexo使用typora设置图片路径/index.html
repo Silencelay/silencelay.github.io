@@ -6,12 +6,12 @@
   
   <title>hexo使用typora设置图片路径 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="hexo:使用typora设置图片路径hexo本地图片显示问题使用hexo生成静态资源后,由于url的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:  将图片放入source&#x2F;images目录下,每次generate都会生成图片,再使用相对或绝对路径进行引用 配置hexo的_config.yml文件, 将 post_asset_folder 设置为true, 这样每次new">
+  <meta name="description" content="hexo本地图片显示问题使用hexo生成静态资源后,由于url的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:  将图片放入source&#x2F;images目录下,每次generate都会生成图片,再使用相对或绝对路径进行引用 配置hexo的_config.yml文件, 将 post_asset_folder 设置为true, 这样每次new 生成一个文章时都会同步生成一个同名的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo使用typora设置图片路径">
 <meta property="og:url" content="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="hexo:使用typora设置图片路径hexo本地图片显示问题使用hexo生成静态资源后,由于url的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:  将图片放入source&#x2F;images目录下,每次generate都会生成图片,再使用相对或绝对路径进行引用 配置hexo的_config.yml文件, 将 post_asset_folder 设置为true, 这样每次new">
+<meta property="og:description" content="hexo本地图片显示问题使用hexo生成静态资源后,由于url的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:  将图片放入source&#x2F;images目录下,每次generate都会生成图片,再使用相对或绝对路径进行引用 配置hexo的_config.yml文件, 将 post_asset_folder 设置为true, 这样每次new 生成一个文章时都会同步生成一个同名的">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/image-20220705124229275.png">
 <meta property="og:image" content="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/image-20220705124325939.png">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/image-20220705124256479.png">
 <meta property="og:image" content="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/image-20220705124637948.png">
 <meta property="article:published_time" content="2022-07-05T04:39:44.000Z">
-<meta property="article:modified_time" content="2022-07-05T04:49:30.063Z">
+<meta property="article:modified_time" content="2022-07-05T04:52:18.408Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -102,14 +102,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="hexo-使用typora设置图片路径"><a href="#hexo-使用typora设置图片路径" class="headerlink" title="hexo:使用typora设置图片路径"></a>hexo:使用typora设置图片路径</h1><h3 id="hexo本地图片显示问题"><a href="#hexo本地图片显示问题" class="headerlink" title="hexo本地图片显示问题"></a><code>hexo</code>本地图片显示问题</h3><p>使用<code>hexo</code>生成静态资源后,由于<code>url</code>的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:</p>
+        <h3 id="hexo本地图片显示问题"><a href="#hexo本地图片显示问题" class="headerlink" title="hexo本地图片显示问题"></a><code>hexo</code>本地图片显示问题</h3><p>使用<code>hexo</code>生成静态资源后,由于<code>url</code>的问题会出现图片加载的问题,现在网上的文章及官方的解决方案大概分为三种:</p>
 <ol>
 <li>将图片放入<code>source/images</code>目录下,每次<code>generate</code>都会生成图片,再使用相对或绝对路径进行引用</li>
 <li>配置<code>hexo</code>的<code>_config.yml</code>文件, 将 <code>post_asset_folder</code> 设置为<code>true</code>, 这样每次new 生成一个文章时都会同步生成一个同名的文件夹,然后设置相对或绝对路径. </li>
 <li>使用<code>hexo</code>官方的解决方案,使用模版变量, <code>&#123;% asset_img slug [title] %&#125; </code></li>
 </ol>
 <p>但是在配置过程中发现这三种方式都多多少少存在一些问题,前两种首页跟内容页会有一个加载失败的问题,而第三种则失去了<code>markdown</code>的意义.</p>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><span id="more"></span>
+
+<ol>
 <li><p>打开根目录下的配置文件_config.yml，设置post_asset_folder  为 true</p>
 <p><img src="/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/image-20220705124229275.png" alt="image-20220705124229275"></p>
 </li>
@@ -129,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/" data-id="cl57ozq1q0000hwvt2qvv7nfr" data-title="hexo使用typora设置图片路径" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/05/hexo%E4%BD%BF%E7%94%A8typora%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84/" data-id="cl57p3g3b0001ycvtccv99mcm" data-title="hexo使用typora设置图片路径" class="article-share-link">Share</a>
       
       
       
